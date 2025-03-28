@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -23,4 +23,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.stroke-text {
+  /* color: #2c3943; */
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke-width: 1.4px !important;
+  -webkit-text-stroke-color: #2c3943 !important
 }
