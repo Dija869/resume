@@ -7,18 +7,33 @@ export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Updated navItems with type and path information
   const navItems = [
-    'ABOUT',
-    'SERVICES',
-    'PORTFOLIO',
-    'RESUME',
-    'CONTACT',
-    'BLOG'
+    { name: 'HOME', type: 'page', path: '/' },
+    { name: 'ABOUT', type: 'hash', path: '#about' },
+    { name: 'SERVICES', type: 'hash', path: '#services' },
+    { name: 'PORTFOLIO', type: 'page', path: '/portfolio' },
+    { name: 'RESUME', type: 'hash', path: '#resume' },
+    { name: 'CONTACT', type: 'page', path: '/contact' },
+    { name: 'BLOG', type: 'page', path: '/blog' }
   ];
 
+  // Function to handle navigation based on link type
+  const handleNavigation = (item: { name: string; type: string; path: string }, e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (item.type === 'hash') {
+      e.preventDefault();
+      const element = document.querySelector(item.path);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    
+    setMobileMenuOpen(false);
+  };
+
   return (
-    <div className='container'>
-      <nav className="bg-white dark:bg-gray-800 shadow-sm fixed rounded-br-2xl rounded-bl-2xl max-w-4xl lg:ml-10 xl:ml-25 z-10 top-0">
+    <div className='w-full mx-auto px-15'>
+      <nav className="bg-white dark:bg-gray-800 shadow-sm rounded-br-2xl rounded-bl-2xl max-w-4xl fixed top-0 z-50">
         {/* Container with exact width from your image */}
         <div className="mx-auto px-4" >
           <div className="flex justify-between h-16 items-center">
@@ -38,24 +53,25 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) => (
                 <Link
-                  key={item}
-                  href={`${item.toLowerCase()}`}
+                  key={item.name}
+                  href={item.path}
                   className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium text-sm"
                   style={{ fontSize: '0.9rem', letterSpacing: '0.5px' }}
+                  onClick={(e) => handleNavigation(item, e)}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
 
-            {/* Dark mode toggle */}
+            {/* Dark mode toggle
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium text-sm hidden lg:block"
               style={{ fontSize: '0.9rem', letterSpacing: '0.5px' }}
             >
               {darkMode ? 'LIGHT VERSION' : 'DARK VERSION'}
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -64,12 +80,12 @@ export default function Navbar() {
           <div className="md:hidden bg-white dark:bg-gray-800 pb-3 px-4">
             {navItems.map((item) => (
               <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
+                key={item.name}
+                href={item.path}
                 className="block py-2 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={(e) => handleNavigation(item, e)}
               >
-                {item}
+                {item.name}
               </Link>
             ))}
           </div>

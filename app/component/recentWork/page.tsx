@@ -73,8 +73,8 @@ export default function PortfolioCarousel() {
 
   return (
     <div className="conatiner mx-auto my-16 bg-slate-800 rounded-xl py-15 relative overflow-hidden">
-      <div className="flex justify-between items-center mb-8 px-15">
-      <h1 className="text-6xl font-bold tracking-wide p-6"
+      <div className="flex flex-wrap justify-between items-center mb-8 px-15">
+      <h1 className="text-6xl font-bold tracking-wide py-6"
                         style={{
                             WebkitTextStroke: '1.5px rgba(160, 174, 192, 0.7)',
                             color: 'transparent',

@@ -30,7 +30,7 @@ const EducationCards = () => {
   ];
 
   return (
-    <section className='container mx-auto px-6'>
+    <section className='container mx-auto px-1'>
     <div className="">
       <div >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
