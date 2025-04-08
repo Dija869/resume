@@ -132,7 +132,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-const Page = async ({ params }: { params: { blogs: string } }) => {
+const Page = async ({ params }: { params: Promise<{ blogs: string }> }) => {
   const { blogs } = await params;
 
   const response = await axios.post(
@@ -166,15 +166,15 @@ const Page = async ({ params }: { params: { blogs: string } }) => {
         <h1 className='font-bold text-3xl '>{response.data.payload.title}</h1>
         <p className='text-gray-600 text-lg pt-6 pb-10'>Published by Khadija Naqvi on {response.data.payload.created_at}</p>
         <Image src={`https://backoffice.orio.digital/assets/uploads/${response.data.payload.featured_image}`}
-         width={500} 
-         height={300}
-        alt={response.data.payload.title}
-        className='rounded-3xl ' />
-        
+          width={500}
+          height={300}
+          alt={response.data.payload.title}
+          className='rounded-3xl ' />
+
         <p className=' max-w-3xl text-gray-600 text-lg pt-6' dangerouslySetInnerHTML={{
           __html: response.data.payload.detailed_content,
         }}></p>
-       
+
       </div>
     </section>
   )

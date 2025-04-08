@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,43 +10,43 @@ const LatestWorks = () => {
   const projects = [
     {
       id: 1,
-      title: '3d Printed Cup',
-      image: '/images/portfolio_1.jpg',
+      title: "Cordoba",
+      image: "/cordoba.jpg",
       category: 'marketing',
       backgroundColor: 'bg-tranparent'
     },
     {
       id: 2,
-      title: 'Painted Orange Slices',
-      image: '/images/portfolio_2.jpg',
+      title: "Brand Kahani",
+      image: "/brandKahani.jpg",
       category: 'branding',
-      // backgroundColor: 'bg-tranparent'
+      backgroundColor: 'bg-tranparent'
     },
     {
       id: 3,
-      title: 'Banana and coffee',
-      image: '/images/portfolio_3.jpg',
+      title: "Food Recipe",
+      image: "/food_recipe.png",
       category: 'marketing',
       backgroundColor: 'bg-tranparent'
     },
     {
       id: 4,
-      title: "Coffe o'Clock",
-      image: '/images/portfolio_4.jpg',
+      title: "TODO App",
+      image: "/todo.jpg",
       category: 'branding',
       backgroundColor: 'bg-tranparent'
     },
     {
       id: 5,
-      title: 'Cherries and torquiose',
-      image: '/images/portfolio_5.jpg',
+      title: "ATM App",
+      image: "/bank.jpg",
       category: 'marketing',
       backgroundColor: 'bg-tranparent'
     },
     {
       id: 6,
-      title: 'Orange and Blue',
-      image: '/images/portfolio_6.jpg',
+      title: "Calculator",
+      image: "/calculator.png",
       category: 'branding',
       backgroundColor: 'bg-tranparent'
     },
@@ -66,17 +66,17 @@ const LatestWorks = () => {
           <button
             onClick={() => setActiveFilter('all')}
             className={`px-6 py-2 rounded-full transition-all ${activeFilter === 'all'
-                ? 'bg-gray-800 text-white'
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              ? 'bg-gray-800 text-white'
+              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
           >
             Show All
           </button>
-          <button
+          {/* <button
             onClick={() => setActiveFilter('marketing')}
             className={`px-6 py-2 rounded-full transition-all ${activeFilter === 'marketing'
-                ? 'bg-gray-800 text-white'
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              ? 'bg-gray-800 text-white'
+              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
           >
             Marketing
@@ -84,12 +84,12 @@ const LatestWorks = () => {
           <button
             onClick={() => setActiveFilter('branding')}
             className={`px-6 py-2 rounded-full transition-all ${activeFilter === 'branding'
-                ? 'bg-gray-800 text-white'
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              ? 'bg-gray-800 text-white'
+              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
           >
             Branding
-          </button>
+          </button> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -98,7 +98,7 @@ const LatestWorks = () => {
               <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className={`relative aspect-[3/2] `}>
                   <Image
-                    src={project.image}
+                    src={ `/images${project.image}`}
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105 group-hover:bg-transparent"

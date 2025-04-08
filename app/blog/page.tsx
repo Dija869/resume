@@ -1,4 +1,3 @@
-import { url } from 'inspector';
 import Image from 'next/image';
 import Link from 'next/link';
 import axios from 'axios';
@@ -48,6 +47,20 @@ import axios from 'axios';
 //   // },
 // ];
 
+type PostType = {
+  id: string;
+  slug: string;
+  author: string;
+  title: string;
+  short_content: string;
+  featured_image: string;
+  category_type: string | null; // It can be either a string or null
+  created_at: string;
+  linkedin_url: string;
+  status: string;
+};
+
+
 export default async function BlogSection() {
 
   const response = await axios.get('https://backoffice.orio.digital/api/blogs/list.php')
@@ -57,9 +70,9 @@ export default async function BlogSection() {
     <section className=" py-30 px-16  bg-[#f1f5fa]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2  gap-8">
-          {response.data.payload.map((post, index) => {
+          {response.data.payload.map((post: PostType, index: number) => {
 
-            if (post.status == 1) {
+            if (post.status == "1") {
               return (
                 <div key={index} className="overflow-hidden">
                   <div className="relative ">
@@ -82,7 +95,7 @@ export default async function BlogSection() {
                       </h3>
                     </Link>
                     <p className="text-normal text-gray-600 mb-4">
-                     {post.short_content}
+                      {post.short_content}
                     </p>
                     <i className="text-xs text-gray-500 italic">Posted on {post.created_at}</i>
                   </div>

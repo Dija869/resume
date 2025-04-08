@@ -16,10 +16,10 @@ const Cards = () => {
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </div>
-            <h3 className="font-medium leading-[30px] mb-3 text-xl">Creating marketing strategies, and campaigns</h3>
+            <h3 className="font-medium leading-[30px] mb-3 text-xl">Aspiring Frontend Developer  Skilled in HTML, CSS, Bootstrap, Tailwind </h3>
           </div>
           <div className="absolute bottom-0 right-0 bg-gray-800 text-white p-4 rounded-tl-3xl rounded-br-2xl">
-            <Link href="/">
+            <Link href="https://www.linkedin.com/in/khadija-naqvi-1930b0289">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-send">
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -38,7 +38,7 @@ const Cards = () => {
                 <line x1="6" y1="20" x2="6" y2="16"></line>
               </svg>
             </div>
-            <h3 className="font-medium leading-[30px] mb-3 text-xl">Enhancing brand awareness, and generating leads</h3>
+            <h3 className="font-medium leading-[30px] mb-3 text-xl"> Learning JavaScript, React & Next.js </h3>
           </div>
           <div className="absolute bottom-0 right-0 bg-gray-800 text-white p-4 rounded-tl-3xl rounded-br-2xl">
             <Link href="/">

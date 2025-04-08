@@ -34,10 +34,10 @@ function Page() {
           <div className="w-full  xl:w-3/4 px-4 py-4 lg:py-0 order-3 md:order-1">
             <div className="w-3/4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4">
-                Hi There! I&apos;m Khadija. A Begineer Frontend-Developer based on Next.js
+                Hi There! I&apos;m Khadija. A Beginner Frontend-Developer based on Next.js
               </h1>
-              <div className="hire-status mt-3 flex items-center rounded-full border-[#9fa8ae] border-dashed border-1 px-4 py-2 w-[190px]">
-                <span className="dot-available w-3 h-3 rounded-full bg-green-500 mr-2"></span>
+              <div className=" mt-3 flex items-center rounded-full border-[#9fa8ae] border-dashed border-1 px-4 py-2 w-[190px]">
+                <span className="w-3 h-3 rounded-full bg-green-500 mr-2"></span>
                 Available for work
               </div>
             </div>
@@ -53,14 +53,13 @@ function Page() {
           {/* Left Side - Years of Experience */}
           <div className="text-left lg:text-center">
             <h2 className="text-6xl font-bold text-gray-900">10+</h2>
-            <p className="text-gray-500 mt-2">Years of Experience</p>
+            <p className="text-gray-500 mt-2">Project Experience</p>
           </div>
 
           {/* Right Side - Description */}
           <div className="col-span-2">
             <p className="text-4xl text-gray-900 font-medium leading-tight">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            Developed 10+ frontend projects using HTML, CSS, JavaScript, and frameworks like Bootstrap, Tailwind.
             </p>
           </div>
         </div>

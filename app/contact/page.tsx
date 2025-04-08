@@ -57,18 +57,17 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Phone:</h3>
-                <p className="text-indigo-100">+123 456 789 01</p>
-                <p className="text-indigo-100">+123 456 789 02</p>
+                <p className="text-indigo-100">+92 31023414 94</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email:</h3>
-                <p className="text-indigo-100">contact@flatheme.net</p>
+                <p className="text-indigo-100">khadijanaqvi000@gmail.com</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-2">Address:</h3>
-                <p className="text-indigo-100">121 King St, Melbourne VIC 3000</p>
+                <p className="text-indigo-100">Shah fasial town , Karachi</p>
               </div>
             </div>
           </div>

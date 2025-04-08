@@ -4,8 +4,8 @@ import React from 'react';
 const EducationCards = () => {
   const educationItems = [
     {
-      degree: 'Business Administration',
-      institution: 'University of Business',
+      degree: 'Course in Advance Electronics and PCB designing',
+    institution: 'INSTITUTE OF INDUSTRIAL ELECTRONICS ENGINEERING',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -16,8 +16,8 @@ const EducationCards = () => {
       )
     },
     {
-      degree: 'Bachelor of Computer Science',
-      institution: 'University of Science',
+      degree: 'Bachelor of PHYSICS',
+    institution: 'FEDERAL URDU UNIVERSITY OF ARTS, SCIENCE AND TECHNOLOGY',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path d="M12 14l9-5-9-5-9 5 9 5z" />

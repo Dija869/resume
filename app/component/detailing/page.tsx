@@ -4,39 +4,39 @@ import React from 'react';
 const SkillsExperience = () => {
   // Skills data with percentages
   const skills = [
-    { name: "EMAIL MARKETING", percentage: 98 },
-    { name: "SEO AND SEM", percentage: 94 },
-    { name: "COPYWRITING", percentage: 90 },
-    { name: "DATA ANALYSIS", percentage: 85 },
-    { name: "CONTENT MARKETING", percentage: 98 },
+    { name: "HTML5 AND CSS3", percentage: 98 },
+    { name: "BOOTSTRAP", percentage: 90 },
+    { name: "TAILWIND", percentage: 75 },
+    { name: "JAVASCRIPT(ES5)", percentage: 70 },
+    { name: "SEO AND SEM", percentage: 75 },
     { name: "CONTENT CREATION", percentage: 80 },
   ];
 
   // Experience data
   const experiences = [
     {
-      period: "2023 - PRESENT",
-      title: "Creative Director",
-      company: "@flatheme",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+      period: "2025 - PRESENT",
+    title: "Frontend Development Intern ",
+      company: "@Orio_Technology",
+      description: "Building responsive web interfaces using HTML, CSS, and Tailwind CSS - Learning and working with JavaScript (ES5), React, and Next.js - Practicing Git & GitHub for version control and team collaboration"
     },
     {
-      period: "2021 - 2023",
-      title: "Marketing Team Lead",
-      company: "@flatheme",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+      period: "May 2024 - Nov 2024 ",
+      title: "Web and Mobile App Development Course",
+      company: "@SMIT",
+      description: "In this Course, Created simple frontend projects using HTML and CSS, including portfolio sites, to-do apps, calculator , kids game and weather UI layout etc"
     },
     {
-        period: "2018 - 2021",
-        title: "Marketing Specialist",
-        company: "@flatheme",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        period: "Nov 2023 - Jan 2024",
+        title: "Sales & Application Engineering Internship ",
+        company: "@Zimco_International",
+        description: "Assisted in client demos and product application setup - Collaborated with the sales team to understand customer needs and provide technical support - Gained insights into the sales process and customer relationship management"
       },
       {
-        period: "2015 - 2018",
-        title: "Solution Architect",
-        company: "@flatheme",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        period: "Jan 2020 - FEB 2024",
+        title: "BS Physics (Electronics Specialization)",
+        company: "@FUUAST",
+        description: "Completed coursework in Electronics, Circuit Design, and Mathematical Physics - Engaged in project (BLUETOOTH CAR CONTROL) related to electronics and programming , enhancing practical knowledge"
       }
   ];
 

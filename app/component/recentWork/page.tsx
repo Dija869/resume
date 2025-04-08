@@ -13,38 +13,39 @@ interface WorkItem {
 const works: WorkItem[] = [
   {
     id: 1,
-    title: "3d Printed Cup",
-    image: "/images/portfolio_1.jpg",
-    color: "bg-red-200",
+    title: "Cordoba",
+    image: "/cordoba.jpg",
+    color: "bg-blue-100",
   },
   {
     id: 2,
-    title: "Painted Orange Slices",
-    image: "/images/portfolio_2.jpg",
-    color: "bg-blue-200",
-  },
-  {
-    id: 3,
-    title: "Banana and Coffee",
-    image: "/images/portfolio_3.jpg",
-    color: "bg-yellow-200",
-  },
-  {
-    id: 4,
-    title: "Coffee o'Clock",
-    image: "/images/portfolio_4.jpg",
+    title: "Brand Kahani",
+    image: "/brandKahani.jpg",
     color: "bg-red-200",
   },
   {
+    id: 3,
+    title: "Food Recipe",
+    image: "/food_recipe.png",
+    color: "bg-blue-200",
+  },
+  {
+    id: 4,
+    title: "TODO App",
+    image: "/todo.jpg",
+    color: "bg-purple-200",
+  },
+  
+  {
     id: 5,
-    title: "Cherries and Torquiose",
-    image: "/images/portfolio_5.jpg",
+    title: "ATM App",
+    image: "/bank.jpg",
     color: "bg-purple-100",
   },
   {
     id: 6,
-    title: "Orange on Blue",
-    image: "/images/portfolio_6.jpg",
+    title: "Calculator",
+    image: "/calculator.png",
     color: "bg-blue-200",
   },
 ]
@@ -76,7 +77,7 @@ export default function PortfolioCarousel() {
       <div className="flex flex-wrap justify-between items-center mb-8 px-15">
       <h1 className="text-6xl font-bold tracking-wide py-6"
                         style={{
-                            WebkitTextStroke: '1.5px rgba(160, 174, 192, 0.7)',
+                          WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.7)',
                             color: 'transparent',
                             textShadow: '0 0 1px rgba(160, 174, 192, 0.1)'
                         }}>
@@ -112,7 +113,7 @@ export default function PortfolioCarousel() {
             className={`min-w-full md:min-w-[530px] h-[290px] rounded-lg overflow-hidden flex-shrink-0 snap-start ${work.color} relative`}
           >
             <Image
-              src={work.image || "/placeholder.svg"}
+              src={`/images${work.image}`}
               alt={work.title}
               fill
               className="object-cover mix-blend-multiply"

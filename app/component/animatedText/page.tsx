@@ -185,9 +185,9 @@ const AnimatedTextBanner = () => {
   }, [isInitialized]);
 
   const textItems = [
-    'Marketer',
-    'Copywriter',
-    '10 years of Experience',
+    'Content Writer',
+    'Frontend Developer',
+    '10 Project Experience',
     'Digital Strategist',
     'Web Developer',
   ];
