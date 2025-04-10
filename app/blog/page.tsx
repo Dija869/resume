@@ -69,7 +69,7 @@ export default async function BlogSection() {
   return (
     <section className=" py-30 md:px-16 px-4 bg-[#f1f5fa]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2  gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-8">
           {response.data.payload.map((post: PostType, index: number) => {
 
             if (post.status == "1") {
@@ -87,7 +87,7 @@ export default async function BlogSection() {
             {post.category}
           </span> */}
                   </div>
-                  <div className="p-6">
+                  <div className="py-6">
                     <Link href={`/blog/${post.slug}`}>
                       <h3 className="text-2xl font-semibold mb-2 relative group cursor-pointer">
                         {post.title}

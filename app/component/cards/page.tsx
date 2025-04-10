@@ -3,11 +3,11 @@ import React from 'react';
 
 const Cards = () => {
   return (
-    <div className="container mx-auto px-6 py-16" id="about">
+    <div className="container mx-auto px-4 py-16" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {/* Card 1 */}
-        <div className="bg-white p-12 rounded-2xl shadow-lg relative">
+        <div className="bg-white p-10 rounded-2xl shadow-lg relative">
           <div className="flex flex-col justify-center items-left">
             <div className="text-gray-500 text-4xl mb-10">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(44, 57, 67, .4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-globe">
@@ -29,7 +29,7 @@ const Cards = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white p-14 rounded-2xl shadow-lg relative">
+        <div className="bg-white p-10 rounded-2xl shadow-lg relative">
           <div className="flex flex-col justify-center items-left">
             <div className="text-gray-500 text-4xl mb-10">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(44, 57, 67, .4)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="feather feather-bar-chart">
@@ -51,7 +51,7 @@ const Cards = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-[#9c7ece] p-18 rounded-2xl shadow-lg text-white flex items-center justify-center flex-col">
+        <div className="bg-[#9c7ece] p-18 lg:p-10 rounded-2xl shadow-lg text-white flex items-center justify-center flex-col">
           <div className="flex flex-col justify-center items-left">
             <h1 className="text-6xl font-bold tracking-wide p-6" style={{
               WebkitTextStroke: '1.5px rgba(160, 174, 192, 0.7)',

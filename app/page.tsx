@@ -16,7 +16,7 @@ function Page() {
           <div className="w-full  xl:w-1/4 px-4 order-1 md:order-2 text-right flex justify-end">
             {/* <div className='w-2/4'> */}
             <div className='relative py-5 '>
-              <div className='absolute  top-0 bottom-0  right-0 -translate-x-[15px] -translate-y-[2px] rounded-tl-full rounded-bl-full border-1 border-dashed border-[#9fa8ae] w-[270px] md:w-[310px] xl:w-[290px] h-[300px] md:h-[350px] xl:h-[320px]'></div>
+              <div className='absolute  top-0 bottom-0  right-0 -translate-x-[12px] -translate-y-[2px] rounded-tl-full rounded-bl-full border-1 border-dashed border-[#9fa8ae] w-[270px] md:w-[310px] xl:w-[290px] h-[300px] md:h-[350px] xl:h-[320px]'></div>
 
               <div className="hero-avatar relative z-10">
                 <Image
@@ -47,7 +47,7 @@ function Page() {
       {/* ///////////////// section 2 /////////////// */}
       <Cards />
       {/* ////////////// section 3 ////////////////  */}
-      <section className="container mx-auto py-16 px-6 md:px-20 flex items-center">
+      <section className="container mx-auto pb-16 px-6 md:px-20 flex items-center">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
 
           {/* Left Side - Years of Experience */}

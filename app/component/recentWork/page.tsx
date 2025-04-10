@@ -72,7 +72,7 @@ export default function PortfolioCarousel() {
   }, [currentIndex])
 
   return (
-    <div className="container mx-auto my-8 bg-slate-800 rounded-xl py-8 relative overflow-hidden px-4 md:px-8">
+    <div className="container mx-auto bg-slate-800 rounded-xl py-8 relative overflow-hidden px-4 md:px-8">
       <div className="flex flex-wrap md:flex-col lg:flex-row justify-between items-center mb-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wide py-4"
           style={{

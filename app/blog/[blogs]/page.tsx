@@ -163,8 +163,8 @@ const Page = async ({ params }: { params: Promise<{ blogs: string }> }) => {
   return (
     <section className='conteiner max-w-7xl mx-auto py-16 px-4'>
       <div className='grid grid-cols-1 place-items-center justify-center '>
-        <h1 className='font-bold text-3xl '>{response.data.payload.title}</h1>
-        <p className='text-gray-600 text-lg pt-6 pb-10'>Published by Khadija Naqvi on {response.data.payload.created_at}</p>
+        <h1 className='font-bold text-3xl text-center'>{response.data.payload.title}</h1>
+        <p className='text-gray-600 text-lg pt-6 pb-10 text-center'>Published by Khadija Naqvi on {response.data.payload.created_at}</p>
         <Image src={`https://backoffice.orio.digital/assets/uploads/${response.data.payload.featured_image}`}
           width={500}
           height={300}

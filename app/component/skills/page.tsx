@@ -112,7 +112,7 @@ export default function Skills() {
   };
 
   return (
-    <section className="container mx-auto px-6 py-15" id="services">
+    <section className="container mx-auto px-6 pb-16" id="services">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7 items-center">
         {/* Left Side - Tech Logos with names */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
