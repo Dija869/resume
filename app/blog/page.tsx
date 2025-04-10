@@ -67,7 +67,7 @@ export default async function BlogSection() {
 
 
   return (
-    <section className=" py-30 px-16  bg-[#f1f5fa]">
+    <section className=" py-30 md:px-16 px-4 bg-[#f1f5fa]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2  gap-8">
           {response.data.payload.map((post: PostType, index: number) => {

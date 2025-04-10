@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className="bg-white dark:bg-gray-800 shadow-sm rounded-br-2xl rounded-bl-2xl max-w-4xl fixed top-0 z-50">
         {/* Container with exact width from your image */}
         <div className="mx-auto px-4" >
-          <div className="flex justify-between h-16 items-center">
+          <div className="flex justify-between h-12 items-center">
 
             {/* Mobile menu button - hidden on md+ screens */}
             <div className="flex md:hidden">

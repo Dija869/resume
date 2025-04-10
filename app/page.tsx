@@ -9,7 +9,7 @@ import PortfolioCarousel from './component/recentWork/page';
 
 function Page() {
   return (
-    <div className='bg-[#f1f5fa] pt-30 px-15'>
+    <div className='bg-[#f1f5fa] pt-30 px-4 md:px-15'>
       {/* //////////// section 1 /////////////// */}
       <section className="container mx-auto px-6">
         <div className="flex lg:flex-row flex-col-reverse -mx-4 ">

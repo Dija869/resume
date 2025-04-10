@@ -60,7 +60,7 @@ const Cards = () => {
             }}>
               4,000+
             </h1>
-            <p className="text-xl mt-2">Satisfied customers around the world during the past 10 years</p>
+            <p className="text-xl mt-2 px-5 md:px-0">Satisfied customers around the world during the past 10 years</p>
           </div>
         </div>
 
